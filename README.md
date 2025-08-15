@@ -27,7 +27,7 @@ Data is stored **in-memory** and initialized with sample records.
 
 
 ## **Sample JSON for POST /students**
-```json
+json
 {
   "id": 3,
   "firstName": "Sakshi",
@@ -41,7 +41,7 @@ Data is stored **in-memory** and initialized with sample records.
 ### API Testing Examples
 
 **GET /students**
-```bash
+bash
 curl http://localhost:8080/students
 
 
@@ -49,10 +49,11 @@ curl -X POST http://localhost:8080/students \
 -H "Content-Type: application/json" \
 -d '{"id":3,"firstName":"Sakshi","lastName":"Kumari","age":21,"email":"sakshi@123.com"}'
 
-```markdown
+markdown
 ## Implementation Summary
 
 This Student API project is built using Java 17 and Spring Boot.  
 It manages student data in memory and provides REST endpoints to fetch, add, delete students, and view basic statistics.  
 Initial data is seeded manually and optionally from dummyjson.com.  
+
 The backend is fully tested using Postman.
